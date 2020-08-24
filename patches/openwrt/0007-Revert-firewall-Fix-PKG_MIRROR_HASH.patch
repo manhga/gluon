@@ -1,0 +1,19 @@
+From: David Bauer <mail@david-bauer.net>
+Date: Tue, 25 Aug 2020 01:05:05 +0200
+Subject: Revert "firewall: Fix PKG_MIRROR_HASH"
+
+This reverts commit a69949a13f8cf3eca0fccda0d826928034877c9b.
+
+diff --git a/package/network/config/firewall/Makefile b/package/network/config/firewall/Makefile
+index 105d4a0451fee9c1fbead598f74c44ac0248fffe..16edfd35277f94186d13311c47a9b73e855ab7b3 100644
+--- a/package/network/config/firewall/Makefile
++++ b/package/network/config/firewall/Makefile
+@@ -15,7 +15,7 @@ PKG_SOURCE_PROTO:=git
+ PKG_SOURCE_URL=$(PROJECT_GIT)/project/firewall3.git
+ PKG_SOURCE_DATE:=2020-07-25
+ PKG_SOURCE_VERSION:=e9b90dfac2225927c035f6a76277b850c282dc9a
+-PKG_MIRROR_HASH:=917f662d48a766f86ee61a83e13a61688d6eca3647dd4aca1973b1fa1ea64fec
++PKG_MIRROR_HASH:=9164089058b5c8d62e81806dcd2261b9f78b050fb40cd84cbd127794ad7a940e
+ PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
+ PKG_LICENSE:=ISC
+ 
